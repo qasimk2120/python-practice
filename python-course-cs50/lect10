@@ -1,0 +1,111 @@
+# # def main():
+#     # student = get_student() #tuple is a collection of data buut is not mutable meaning values cannot be changed
+#     # if student[0] == "Padma":
+#     #     student[1] = "Ravenclaw"
+#     # print(f"{student[0]} from {student[1]}")
+#     # student = get_student() #dictionary  method
+# #     print(f"{student['name']} from {student['house']}")#dictionary  method
+
+
+# # def get_student():
+# #     # name = input("Enter your name: ")
+# #     # house = input("Enter your house: ")
+# #     # return (name, house) #returning a tuple immutable collection
+# #     # return [name, house] #returning a list muteable data
+# #     student = {} #now a dictionary which is mutable meaning values can be changed
+# #     name = input("Enter your name: ")
+# #     house = input("Enter your house: ")
+# #     return { "name": name, "house": house} #
+
+# # if __name__ == "__main__":
+# #     main()
+
+
+# #classes are like a blueprint and are mutable, we can also make them immutable
+# # # for pieces of data objects or  a mold that you can define and give a name, classes are basically  a definition of a new data type
+# #an object is when you use the blueprint to build a specific house 
+# #primary feature of oop, classes let u define your own data types
+
+
+# # class  Student:
+# #     ...
+
+
+# # def main():
+# #     student =  get_student()
+# #     print(f"{student.name} from {student.house}")
+
+# # def get_student():
+# #     student = Student()  #we created an object/instance of the class student here   #we create objects from classes
+# #     #classes have attributes/instance variables that allow us to specify the data that we want to store
+# #     student.name = input("Enter your name: ")
+# #     student.house = input("Enter your house: ")
+# #     return student
+# # if __name__ == "__main__":
+# #     main()
+
+#     #more functionality 
+
+
+# class  Student: #classes come with certain methods or functions inside of them that we can define, and they behave in a special way
+#     def __init__(self, name, house):  #__ is called dundar init method which is specifically an instance method/designed by python authors 
+#         #adding variables to objects
+#         self.name = name 
+#         self.house = house
+#     def __str__(self): #takes only one argument which is self   ##will be passed a reference to current student object
+#         return f"{self.name} from {self.house}" #returning a string representation of the object
+#     @property
+#     def name(self):
+#         return self._name
+#     @name.setter
+#     def name(self, name):
+#         if not name:
+#             raise ValueError("Name is required")
+#         self._name = name
+
+#     #getter methods
+#     @property #for defining a getter method
+#     def house(self): 
+#         return self._house
+#        #setter methods
+#     @house.setter #for defining a setter method
+#     def house(self, house):
+#         if house not in ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]:
+#             raise ValueError("House is not valid")
+#         self._house = house
+
+#     ##inventing a new function
+# def main():
+#     student =  get_student()
+#     print(student) #this will call the __str__ method
+    
+
+# def get_student():
+#     name = input("Name: ")   #standardize the  attributes
+#     house = input("Enter your house: ")
+#     return Student(name, house) #we created an object/instance of the class student here   #we create objects from classes, also called constructor 
+#     #Student with a capital S-- as a function.
+#     # except ValueError:
+#     #     return get_student()
+
+# if __name__ == "__main__":
+#     main()
+
+
+#practicing class methods 
+# import random
+
+
+# class Hat:
+#     houses = ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]
+    
+#     @classmethod
+#     def sort(cls, name):
+#         print(name, "is in", "some house", random.choice(cls.houses))
+
+
+
+# Hat.sort("Harry")
+
+
+#some cleanup of student code 

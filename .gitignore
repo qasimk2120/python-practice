@@ -1,0 +1,55 @@
+# --- Python cache & bytecode ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Jupyter Notebook checkpoints ---
+.ipynb_checkpoints/
+
+# --- Environments ---
+.env
+.venv
+env/
+venv/
+ENV/
+
+# --- VSCode settings ---
+.vscode/
+
+# --- macOS / Windows system files ---
+.DS_Store
+Thumbs.db
+
+# --- Python package builds ---
+build/
+dist/
+*.egg-info/
+
+# --- Logs & temporary files ---
+*.log
+*.tmp
+
+# --- Data files you don't want in git ---
+*.csv
+*.tsv
+*.xls
+*.xlsx
+*.db
+*.sqlite3
+
+# --- Images (optional: keep only project-related ones) ---
+*.png
+*.jpg
+*.jpeg
+
+# --- Large datasets or model files ---
+*.h5
+*.pkl
+*.joblib
+*.pt
+*.pth
+*.npz
+
+# --- Misc ---
+*.zip
+*.rar
